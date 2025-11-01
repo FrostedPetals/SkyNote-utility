@@ -9,3 +9,5 @@ SkyNote – a fun, responsive, and customizable hub where you can:
 🎵 Set the perfect focus soundtrack
 
 🌈 Switch themes & wallpapers on a whim
+
+Visit on: https://skynote-utility.onrender.com
