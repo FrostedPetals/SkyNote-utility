@@ -3,7 +3,7 @@ import React, { useEffect, useState,useContext } from 'react';
 import { Themecontext } from './Themeprovider';
 
 function Dailyquote() {
-  const [quote, setQuote] = useState(null); // start as null
+  const [quote, setQuote] = useState(null); 
   
   const {theme}=useContext(Themecontext);
   useEffect(() => {
@@ -24,7 +24,7 @@ function Dailyquote() {
   return (
     <div className={`${theme === 'light' ? 'widget-light' : 'widget-dark'} poiret-one-regular`}>
       <blockquote>
-        {quote && quote.text ? quote.text : "Escape the ordinary"}
+        {quote && quote.text ? quote.text : "Escape the ordinary"} {/*DEFAULT VALS */}
       </blockquote>
       <cite>
         <b >

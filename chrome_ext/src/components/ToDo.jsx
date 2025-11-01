@@ -2,10 +2,20 @@ import React,{useState,useContext,useEffect} from 'react'
 
 import { Themecontext } from './Themeprovider';
 function ToDo() {
-  let [tasks,setTasks]=useState([]);
+  
+  
+  const stored = JSON.parse(localStorage.getItem("tsks"))||[];
+  let [tasks,setTasks]=useState(stored);
   let [newTask,setNewTask]=useState("");
   
   const {theme}=useContext(Themecontext);
+
+
+
+useEffect(()=>{
+
+    localStorage.setItem("tsks", JSON.stringify(tasks));
+},[tasks])
 
 
   function addTask(){
@@ -17,6 +27,8 @@ function ToDo() {
       completed:false
     }
     setTasks([...tasks,newTaskobj])
+    
+    {/*localStorage.setItem("tsks", JSON.stringify(tasks));*/}
     setNewTask('')
   }
 
@@ -25,7 +37,8 @@ function ToDo() {
     setTasks(prevTasks => prevTasks.filter(task => task.id !== objid));
   }
   return (
-    <div className='flex-row border-2 p-5'>
+    <div className="border-2 p-5 max-w-[95%] mx-auto sm:mt-4 sm:p-6">
+
     <>
     <h2 className={(theme==='light'?'widget-light':'widget-dark')}>
       ╰┈➤ ❝ [TO-DO] ❞

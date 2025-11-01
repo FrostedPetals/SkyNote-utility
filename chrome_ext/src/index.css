@@ -7,8 +7,9 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Caveat;
+  font-family: 'Georgia';
   font-size: large;
+
 }
 
 
@@ -84,6 +85,7 @@ body {
   background: linear-gradient(135deg, #ffffff, #f4f7fb); /* light gradient */
   color: rgb(3, 37, 66);
   border-radius: 12px;
+  
 }
 
 .widget-dark,
@@ -132,4 +134,8 @@ body {
   border-radius: 10px;
   background-color: #812d2d;
   min-height:50px;
+}
+
+button{
+  margin: 4px;
 }
