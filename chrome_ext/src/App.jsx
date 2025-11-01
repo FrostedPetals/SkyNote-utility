@@ -104,7 +104,7 @@ function App() {
             </ul>
           </div>
           <img
-            src="/assets/skynote.png"
+            src="/assets/skynote.png" alt="SkyNote"
             className="max-w-[180px] max-h-[70px] w-auto h-auto object-contain"
           ></img>
         </div>

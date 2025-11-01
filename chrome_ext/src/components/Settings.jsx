@@ -60,7 +60,7 @@ export function Timings() {
         placeholder="Enter duration (min)"
         className="w-full text-gray-500 rounded-2xl border mb-5  border-white/20 bg-white/10 px-4 py-2  placeholder-white/60 backdrop-blur-md shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
       />
-      <img src="/assets/time.jpg" className="border rounded-lg border-white/10 shadow-[0_0_20px_rgba(120,120,120)]"/>
+      <img src="/assets/time.jpg" alt="picture of clock" className="border rounded-lg border-white/10 shadow-[0_0_20px_rgba(120,120,120)]"/>
     </div>
   );
 }
@@ -140,7 +140,7 @@ export function BgMusic() {
           </button>
         </li>
       </ul>
-      <img src="/assets/music.jpg" className="border rounded-lg border-white/10 shadow-[0_0_20px_rgba(120,120,120)]"/>
+      <img src="/assets/music.jpg" alt="picture of headphones" className="border rounded-lg border-white/10 shadow-[0_0_20px_rgba(120,120,120)]"/>
     </div>
   );
 }
@@ -165,7 +165,7 @@ export function TimerSound() {
           <button onClick={()=>{playTimer('notif')}} className="btn btn-ghost">Set</button>
         </li>
       </ul>
-      <img src="/assets/alarmclock.jpg" className="border rounded-lg border-white/10 shadow-[0_0_20px_rgba(120,120,120)]"/>
+      <img src="/assets/alarmclock.jpg" alt="picture of alarm clock" className="border rounded-lg border-white/10 shadow-[0_0_20px_rgba(120,120,120)]"/>
     </div>
   );
 }
